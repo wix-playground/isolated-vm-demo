@@ -47,9 +47,9 @@ const RESULTS = [];
     RESULTS.push(performance.now() - before)
 
     isolate.dispose()
-    nock.restore()
   }
 
+  nock.restore()
   gc()
 
   process.stdout.write('\n')
