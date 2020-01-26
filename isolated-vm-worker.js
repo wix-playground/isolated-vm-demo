@@ -51,7 +51,7 @@ module.exports = {
       }`,
       [async (...urls) => {
         for (const url of urls) {
-          console.log(`importing ${url}`)
+          // console.log(`importing ${url}`)
           const res = await fetch(url)
           const code = await res.text()
           context.evalSync(code, {filename: url});

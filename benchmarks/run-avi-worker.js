@@ -39,8 +39,8 @@ const RESULTS = [];
     RESULTS.push(performance.now() - before)
 
     worker.terminate()
-    nock.restore()
   }
+  nock.restore()
 
   gc()
 
