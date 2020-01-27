@@ -1,9 +1,6 @@
 const fs = require('fs')
 const ivm = require('isolated-vm')
 const fetch = require('node-fetch')
-// require('./fixtures')
-// const nock = require('nock')
-// nock.recorder.rec({dont_print: true})
 
 // get this shit from redis
 const snapshot = ivm.Isolate.createSnapshot([

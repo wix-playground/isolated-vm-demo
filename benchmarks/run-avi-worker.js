@@ -1,5 +1,6 @@
 const {performance} = require('perf_hooks')
 const nock = require('nock')
+require('../fixtures')
 const math = require('mathjs')
 const {initPlatform, snapshotPromise} = require('../avi-worker')
 const messages = require('../messages')
@@ -8,7 +9,6 @@ const RESULTS = [];
 
 (async () => {
   const snapshot = await snapshotPromise
-  require('../fixtures')
   gc()
   console.log({heapUsed: process.memoryUsage().heapUsed / 1000})
 
