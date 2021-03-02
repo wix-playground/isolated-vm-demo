@@ -6,7 +6,7 @@
     "lodash": "^4.17.15",
     "mathjs": "^6.5.0",
     "node-fetch": "^2.6.0",
-    "node-webworker": "^0.3.712"
+    "@wix/node-webworker": "^0.3.712"
   },
   "devDependencies": {
     "nock": "^11.7.2",

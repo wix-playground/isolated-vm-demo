@@ -1,5 +1,5 @@
 const fs = require('fs')
-const {WebWorker} = require('node-webworker')
+const {WebWorker} = require('@wix/node-webworker')
 const fetch = require('node-fetch')
 
 const snapshotPromise = (async () => {
